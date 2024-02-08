@@ -8,7 +8,12 @@ type HeaderProps = {
 export default function Header({ image }: HeaderProps) {
   return (
     <header>
-      <img {...image} />
+    
+        <img
+          className="h-67 w-67 rounded-full object-cover object-center"
+          {...image}
+        />
+  
     </header>
   );
 }
